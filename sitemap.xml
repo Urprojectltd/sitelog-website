@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://sitelog.app/</loc></url>
+  <url><loc>https://sitelog.app/companies/</loc></url>
   <url><loc>https://sitelog.app/support/</loc></url>
   <url><loc>https://sitelog.app/privacy/</loc></url>
   <url><loc>https://sitelog.app/delete-account/</loc></url>
   <url><loc>https://sitelog.app/terms/</loc></url>
+  <url><loc>https://sitelog.app/hindi/</loc></url>
+  <url><loc>https://sitelog.app/urdu/</loc></url>
+  <url><loc>https://sitelog.app/tamil/</loc></url>
+  <url><loc>https://sitelog.app/malayalam/</loc></url>
+  <url><loc>https://sitelog.app/bengali/</loc></url>
+  <url><loc>https://sitelog.app/nepali/</loc></url>
+  <url><loc>https://sitelog.app/arabic/</loc></url>
+  <url><loc>https://sitelog.app/filipino/</loc></url>
+  <url><loc>https://sitelog.app/polish/</loc></url>
+  <url><loc>https://sitelog.app/romanian/</loc></url>
+  <url><loc>https://sitelog.app/spanish/</loc></url>
+  <url><loc>https://sitelog.app/afrikaans/</loc></url>
 </urlset>
