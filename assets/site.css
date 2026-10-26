@@ -227,23 +227,20 @@ p {
   font-size: 1rem;
   border-radius: 0.65rem;
 }
-.btn--quiet {
-  background: transparent;
-  border-color: var(--ink);
-  color: var(--ink);
+
+/* Official store badges. Artwork is unchanged; height is shared so the
+   pair matches, and the gap is the required clear space. */
+.store__link {
+  display: inline-block;
+  flex: 0 0 auto;
+  line-height: 0;
+  text-decoration: none;
 }
-.btn--quiet:hover {
-  background: var(--ink);
-  color: #fff;
-}
-.btn__sub {
+.store__link img {
   display: block;
-  font-weight: 500;
-  font-size: 0.82rem;
-  opacity: 0.85;
-}
-.btn__stack {
-  text-align: left;
+  height: 48px;
+  width: auto;
+  max-width: none;
 }
 
 /* ------------------------------------------------------------ Bands */
@@ -886,10 +883,6 @@ p {
   .get {
     grid-template-columns: minmax(0, 1fr) auto;
   }
-  .get__actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
 }
 
 /* ------------------------------------------------------------ Footer */
@@ -932,6 +925,12 @@ p {
 .foot__legal {
   margin-top: 2rem;
   font-size: 0.95rem;
+}
+.foot__marks {
+  max-width: 46rem;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
 }
 
 /* ------------------------------------------------------------ Text pages */
