@@ -323,12 +323,6 @@ p {
   align-items: center;
   gap: 1rem 1.5rem;
 }
-.hero__note {
-  font-size: 1rem;
-  color: var(--ink-soft);
-  max-width: 16rem;
-  line-height: 1.35;
-}
 .hero__free {
   margin-top: 1.25rem;
   font-size: 1rem;
@@ -824,11 +818,6 @@ p {
   gap: 2rem;
   align-items: end;
 }
-@media (min-width: 52rem) {
-  .get {
-    grid-template-columns: minmax(0, 1fr) auto;
-  }
-}
 .get__title {
   font-size: clamp(2.8rem, 7vw, 5.2rem);
   line-height: 0.92;
@@ -838,6 +827,15 @@ p {
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem 1.5rem;
+}
+@media (min-width: 52rem) {
+  .get {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .get__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 /* ------------------------------------------------------------ Footer */
