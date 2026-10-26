@@ -556,13 +556,20 @@ p {
 
 .intro {
   display: grid;
-  gap: clamp(1.75rem, 4vw, 3.5rem);
+  gap: clamp(2rem, 4vw, 4.5rem);
   align-items: center;
 }
-@media (min-width: 58rem) {
+/* Stacked on a phone. From about 860px, text sits beside a phone-sized
+   player. The track is a length, not auto: the video's 1080px width
+   attribute must not become the column size. */
+@media (min-width: 54rem) {
   .intro {
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) clamp(18.75rem, 26vw, 22.5rem);
+    align-items: center;
   }
+}
+.intro__copy {
+  min-width: 0;
 }
 .intro__links {
   display: flex;
@@ -574,11 +581,22 @@ p {
 .intro__stage {
   margin: 0;
   justify-self: center;
-  width: min(100%, 20.5rem);
+  width: min(100%, 22.5rem);
+  max-width: 22.5rem;
+  min-width: 0;
+}
+@media (min-width: 54rem) {
+  .intro__stage {
+    width: 100%;
+    max-width: none;
+    justify-self: end;
+  }
 }
 .intro__video {
   display: block;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   height: auto;
   aspect-ratio: 1080 / 1920;
   object-fit: contain;
